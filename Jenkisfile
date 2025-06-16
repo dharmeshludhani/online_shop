@@ -10,7 +10,7 @@ pipeline{
         }
         stage("Code Build"){
             steps{
-               sh "docker build -t Online-shop-app-new ."
+               sh "docker build -t Online-shop-app-new . "
             }
         }
         stage("Testing Phase"){
