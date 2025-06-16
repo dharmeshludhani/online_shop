@@ -10,7 +10,7 @@ pipeline{
         }
         stage("Code Build"){
             steps{
-                echo "code build through docker compose"
+                echo "code build by  docker compose"
             }
         }
         stage("Testing Phase"){
