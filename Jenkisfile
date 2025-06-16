@@ -1,0 +1,29 @@
+pipeline{
+    
+    agent any;
+    
+    stages{
+        stage("code Clone"){
+            steps{
+                git url:"https://github.com/dharmeshludhani/online_shop.git", branch: "jenkins"
+            }
+        }
+        stage("Code Build"){
+            steps{
+                echo "code build through docker compose"
+            }
+        }
+        stage("Testing Phase"){
+            steps{
+                echo "Data not available"
+            }
+        }
+        stage("Deployment"){
+            steps{
+                sh "docker compose down"
+                sh "docker compose up -d"
+            }
+        }
+    
+    
+}
