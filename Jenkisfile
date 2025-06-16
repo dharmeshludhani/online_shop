@@ -21,7 +21,7 @@ pipeline{
         stage("Deployment"){
             steps{
                 sh "docker compose down"
-                sh "docker compose up -d --build online-shop-app-new "
+                sh "docker compose up -d --build onlineshop-app "
             }
         }
     
