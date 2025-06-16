@@ -5,7 +5,7 @@ pipeline{
     stages{
         stage("code Clone"){
             steps{
-                git url: "https://github.com/dharmeshludhani/online_shop.git", branch: "jenkins"
+                git url:"https://github.com/dharmeshludhani/online_shop.git", branch: "jenkins"
             }
         }
         stage("Code Build"){
