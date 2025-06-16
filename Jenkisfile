@@ -15,7 +15,7 @@ pipeline{
         }
         stage("Testing Phase"){
             steps{
-                echo "Data not available"
+                echo "Data will be available soon"
             }
         }
         stage("Deployment"){
