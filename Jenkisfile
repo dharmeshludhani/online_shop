@@ -10,7 +10,7 @@ pipeline{
         }
         stage("Code Build"){
             steps{
-                echo "Finally code build by docker-compose and will be deployed on Jenkins Agent"
+               sh "docker build -t Online-shop-app-new ."
             }
         }
         stage("Testing Phase"){
