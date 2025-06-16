@@ -10,7 +10,7 @@ pipeline{
         }
         stage("Code Build"){
             steps{
-                echo "code build by  docker-compose and will be deployed on Jenkins Agent"
+                echo "Finally code build by docker-compose and will be deployed on Jenkins Agent"
             }
         }
         stage("Testing Phase"){
